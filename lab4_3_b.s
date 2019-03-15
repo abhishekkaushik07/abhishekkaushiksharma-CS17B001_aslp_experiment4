@@ -31,7 +31,8 @@ j iterate
 swap:
 beq  $t7,$s1,END
 lb $t4,0($s5)
-sb $s6,0($s5)
+lb $t5,0($s6)
+sb $t5,0($s5)
 sb $t4,0($s6)
 addi $s5,$s5,1
 addi $s6,$s6,1
